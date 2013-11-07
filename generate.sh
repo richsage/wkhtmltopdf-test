@@ -6,7 +6,7 @@ if [ $IS_OSX -eq 0 ]; then
   BIN="./bin/wkhtmltopdf-osx"
 else
   SIXTYFOURBIT=$(uname -m | grep "x86_64")$?
-  if [ $SIXTYFOURBIT -eq 0]; then
+  if [ $SIXTYFOURBIT -eq 0 ]; then
     BIN="./bin/wkhtmltopdf-amd64"
   else
     BIN="./bin/wkhtmltopdf-i386"
